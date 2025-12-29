@@ -18,4 +18,5 @@ nunjucks.configure('views', {
 })
 
 app.use(morgan('dev'))
-app.use(express)
+app.use(express.static(path.join(__dirname, 'public')))
+app.use()
